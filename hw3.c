@@ -171,6 +171,7 @@ int main(int argc, const char * argv[]) {
             //print TIME
             printf("No. %d\n",total);
             printf("TIME: %s.%.6d\n",timestr, (int)header->ts.tv_usec);
+            printf("Ethernet type: IP\n");
             printf("LENGTH: %d bytes\n", header->len);
             printf("CAPTURE LENGTH: %d bytes\n", header->caplen);
             MAC_address(header->caplen,content);
